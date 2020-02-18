@@ -17,7 +17,8 @@
  	}
  </style> 
 <body>
-	<div id="mapid" style="width: 600px; height: 400px;"></div>
+<h1 style="text-align : center;">제주도 서쪽 관광지</h1>
+	<div id="mapid" style="width: 600px; height: 400px; margin: auto;"></div>
 	<script>
   	var mymap = L.map('mapid').setView([33.3616666, 126.5291666], 9);
 
@@ -40,7 +41,7 @@
   	  		for (var i in data.features[0].properties.items) {
   				map += "<li>"+data.features[0].properties.items[i] + "</li>"
   			}
-      			return "<b>"+ layer.feature.properties.description + "</b><hr>" + map;
+      			return "<b>"+ layer.feature.properties.description + "</b><img src='/d3edu/images/gyeul.jpg' width='60'><hr>" + map;
       			
     
   			})
